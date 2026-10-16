@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 320" width="100%" style="background: #08040d; border-radius: 16px; border: 1px solid #2e124d;">
+  <defs>
+    <linearGradient id="purpleGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="50%" stop-color="#e9d5ff" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+    
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f081c" />
+      <stop offset="100%" stop-color="#050208" />
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      @keyframes svgPulse {
+        0%, 100% { opacity: 0.8; transform: scale(1); }
+        50% { opacity: 1; transform: scale(1.02); }
+      }
+      @keyframes svgFloat {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-6px); }
+      }
+      @keyframes svgTwinkle {
+        0%, 100% { opacity: 0.3; }
+        50% { opacity: 1; }
+      }
+      .banner-title { animation: svgPulse 4s infinite ease-in-out; transform-origin: center; }
+      .banner-star { animation: svgTwinkle 2.5s infinite ease-in-out; }
+      .banner-fly { animation: svgFloat 4s infinite ease-in-out; }
+    </style>
+  </defs>
+
+  <rect width="1000" height="320" fill="url(#bgGrad)" rx="16" />
+
+  <circle cx="500" cy="160" r="180" fill="#a855f7" opacity="0.15" filter="url(#glow)" />
+  
+  <circle class="banner-star" cx="120" cy="70" r="2" fill="#d8b4fe" />
+  <circle class="banner-star" cx="880" cy="250" r="2.5" fill="#a855f7" />
+  <circle class="banner-star" cx="250" cy="270" r="1.5" fill="#ffffff" />
+  <circle class="banner-star" cx="780" cy="60" r="2" fill="#d8b4fe" />
+
+  <text x="500" y="65" font-family="'Segoe UI', sans-serif" font-size="13" letter-spacing="4" fill="#a855f7" text-anchor="middle" opacity="0.9">
+    &lt; / &gt;   tech   .   design   .   creativity
+  </text>
+
+  <g class="banner-title">
+    <text x="500" y="165" font-family="'Georgia', serif" font-size="70" font-weight="bold" fill="url(#purpleGlow)" text-anchor="middle" filter="url(#glow)" letter-spacing="3">
+      brylla ✦
+    </text>
+  </g>
+
+  <text x="500" y="220" font-family="'Segoe UI', sans-serif" font-size="15" letter-spacing="5" fill="#e9d5ff" text-anchor="middle" opacity="0.85">
+    ideias  →  código  →  realidade
+  </text>
+
+  <g class="banner-fly">
+    <text x="910" y="110" font-family="'Segoe UI', sans-serif" font-size="12" fill="#d8b4fe" text-anchor="end" opacity="0.7">sonhe</text>
+    <text x="920" y="128" font-family="'Segoe UI', sans-serif" font-size="12" fill="#d8b4fe" text-anchor="end" opacity="0.7">planeje</text>
+    <text x="930" y="146" font-family="'Segoe UI', sans-serif" font-size="12" fill="#d8b4fe" text-anchor="end" opacity="0.7">construa ♡</text>
+  </g>
+</svg>
