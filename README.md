@@ -8,10 +8,10 @@
 </div>
 
 <div align="center">
-  <a href="https://github.com/brylla">
+  <a href="https://github.com/vvylin">
     <img src="https://img.shields.io/badge/GitHub-brylla-7C3AED?style=for-the-badge&logo=github&logoColor=white&labelColor=0D1117" alt="GitHub" />
   </a>
-  <a href="https://instagram.com/bllbrylv">
+  <a href="https://instagram.com/v.vylin">
     <img src="https://img.shields.io/badge/Instagram-bllbrylv-C026D3?style=for-the-badge&logo=instagram&logoColor=white&labelColor=0D1117" alt="Instagram" />
   </a>
   <a href="https://linkedin.com/in/isabellamunhoz8">
